@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Режим">
+        <ListPreference
+            android:defaultValue="vpn"
+            android:entries="@array/modes"
+            android:entryValues="@array/mode_values"
+            android:key="mode"
+            android:summary="%s"
+            android:title="Режим работы" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bypass_lan"
+            android:summary="Локальные сети (192.168.x.x, 10.x.x.x и т.п.) идут напрямую"
+            android:title="Не туннелировать LAN" />
+        <EditTextPreference
+            android:defaultValue="8.8.8.8"
+            android:inputType="phone"
+            android:key="dns"
+            android:summary="DNS-запросы идут через сервер VLESS (UDP)"
+            android:title="DNS-сервер" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Подписки">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_update"
+            android:summary="При запуске, если с последнего обновления прошло больше 12 часов"
+            android:title="Обновлять автоматически" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Локальный прокси">
+        <EditTextPreference
+            android:defaultValue="10808"
+            android:inputType="number"
+            android:key="proxy_port"
+            android:summary="SOCKS5 и HTTP на одном порту"
+            android:title="Порт" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="proxy_lan"
+            android:summary="Разрешить подключения к прокси из локальной сети"
+            android:title="Доступ из LAN" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Отладка">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="verbose"
+            android:summary="Писать в журнал каждое соединение"
+            android:title="Подробный журнал" />
+    </PreferenceCategory>
+</PreferenceScreen>

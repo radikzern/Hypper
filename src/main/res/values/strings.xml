@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Hypper</string>
+
+    <string name="servers">Серверы</string>
+    <string name="empty">Серверов нет.\nСкопируйте ссылку vless://, wireguard://, ключ Amnezia vpn://, конфиг .conf или ссылку на подписку и нажмите «Вставить».</string>
+    <string name="subs_empty">Подписок нет.\nПодписка — это ссылка https://…, по которой провайдер отдаёт список серверов.</string>
+    <string name="status_off">Отключено</string>
+    <string name="status_connecting">Подключение…</string>
+    <string name="status_on">Подключено</string>
+
+    <string name="menu_paste">Вставить</string>
+    <string name="menu_import_file">Импорт из файла (.conf)</string>
+    <string name="menu_ping">Проверить задержку</string>
+    <string name="menu_best">Выбрать самый быстрый</string>
+    <string name="menu_sort">Сортировать по задержке</string>
+    <string name="menu_update_subs">Обновить подписки</string>
+    <string name="menu_subs">Подписки</string>
+    <string name="menu_add_sub">Добавить подписку</string>
+    <string name="menu_update">Обновить</string>
+    <string name="menu_add">Добавить вручную</string>
+    <string name="menu_log">Журнал</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_edit">Изменить</string>
+    <string name="menu_copy">Копировать ссылку</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_delete">Удалить</string>
+    <string name="menu_save">Сохранить</string>
+    <string name="menu_refresh">Обновить</string>
+    <string name="menu_clear">Очистить</string>
+
+    <string name="sec_server">Сервер</string>
+    <string name="wg_config">Конфигурация WireGuard / AmneziaWG</string>
+    <string name="wg_keygen">Сгенерировать ключи</string>
+    <string name="sec_transport">Транспорт</string>
+    <string name="sec_security">Безопасность</string>
+    <string name="hint_name">Название</string>
+    <string name="hint_sub_name">Название (необязательно)</string>
+    <string name="hint_sub_url">https://…</string>
+    <string name="hint_address">Адрес (домен или IP)</string>
+    <string name="hint_port">Порт</string>
+    <string name="hint_uuid">UUID</string>
+    <string name="hint_path">Путь WebSocket, например /ws</string>
+    <string name="hint_host">Host-заголовок (необязательно)</string>
+    <string name="hint_sni">SNI (необязательно)</string>
+    <string name="hint_pbk">Публичный ключ (pbk)</string>
+    <string name="hint_sid">Short ID (sid, необязательно)</string>
+    <string name="hint_fp">Fingerprint (fp, необязательно)</string>
+    <string name="hint_spx">SpiderX (spx, необязательно)</string>
+    <string name="insecure">Не проверять сертификат</string>
+    <string name="insecure_hint">На Android 4 нет корневого сертификата Let\'s Encrypt (ISRG Root X1), поэтому для таких серверов эту галку, скорее всего, придётся включить.</string>
+
+    <string-array name="networks">
+        <item>TCP</item>
+        <item>WebSocket</item>
+    </string-array>
+    <string-array name="securities">
+        <item>Нет</item>
+        <item>TLS</item>
+        <item>REALITY</item>
+    </string-array>
+
+    <string-array name="modes">
+        <item>VPN (весь трафик)</item>
+        <item>Только прокси SOCKS5/HTTP</item>
+        <item>Root (iptables, без VPN) — для Android до 4.3</item>
+    </string-array>
+    <string-array name="mode_values">
+        <item>vpn</item>
+        <item>proxy</item>
+        <item>root</item>
+    </string-array>
+</resources>
